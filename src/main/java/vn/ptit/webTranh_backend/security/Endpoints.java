@@ -5,7 +5,10 @@ public class Endpoints {
     public static final String font_end_host = "http://localhost:3000";
     public static final String[] PUBLIC_GET = {
             "/arts",
+            "/art/**",
+            "/art",
             "/arts/**",
+            "/user",
             "/genre/**",
             "/images/**",
             "/reviews/**",
@@ -27,7 +30,10 @@ public class Endpoints {
     };
 
     public static final String[] PUBLIC_POST = {
+            "/art/add-art",
+            "/art/add-art/**",
             "/user/register",
+            "/arts/**",
             "/user/authenticate",
             "/cart-item/add-item",
             "/order/**",
@@ -60,9 +66,8 @@ public class Endpoints {
             "/users",
             "/users/**",
             "/cart-items/**",
-            "/arts",
-            "/arts/**",
-            "/art/add-art/**",
+//            "/arts",
+//            "/arts/**",
             "/user/add-user/**",
             "/feedbacks/**",
             "/cart-items/**",

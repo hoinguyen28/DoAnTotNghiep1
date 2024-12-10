@@ -31,6 +31,8 @@ public class Art {
     private double price; // Giá niêm yết
     @Column(name = "quantity")
     private int quantity; // Số lượng
+    @Column(name = "review_status")
+    private String reviewStatus = "PENDING"; // Giá trị mặc định
     @ManyToMany(fetch = FetchType.LAZY, cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
     @JoinTable(name = "art_genre", joinColumns = @JoinColumn(name = "id_art"), inverseJoinColumns = @JoinColumn(name = "id_genre"))
     private List<Genre> listGenres; // Danh tranh thể loại

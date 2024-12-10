@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import vn.ptit.webTranh_backend.entity.Art;
 
 
-@RepositoryRestResource(path = "art")
+@RepositoryRestResource(path = "arts")
 public interface ArtRepository extends JpaRepository<Art, Integer> {
     Page<Art> findByNameArtContaining(@RequestParam("nameArt") String nameArt, Pageable pageable);
     Page<Art> findByListGenres_idGenre(@RequestParam("idGenre") int idGenre, Pageable pageable);
