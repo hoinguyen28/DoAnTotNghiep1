@@ -43,6 +43,10 @@ public class JwtService {
                     claims.put("role", "ADMIN");
                     break;
                 }
+                if (role.getNameRole().equals("ARTIST")) {
+                    claims.put("role", "ARTIST");
+                    break;
+                }
                 if (role.getNameRole().equals("CUSTOMER")) {
                     claims.put("role", "CUSTOMER");
                     break;

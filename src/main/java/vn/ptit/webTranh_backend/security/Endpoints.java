@@ -4,11 +4,16 @@ public class Endpoints {
 
     public static final String font_end_host = "http://localhost:3000";
     public static final String[] PUBLIC_GET = {
+            "feedbacks/**",
+            "/discounts/**",
+            "/recommendations/**",
             "/arts",
+            "/payments/**",
+            "/deliveries/**",
             "/art/**",
             "/art",
             "/arts/**",
-            "/user",
+            "/users/**",
             "/genre/**",
             "/images/**",
             "/reviews/**",
@@ -30,6 +35,10 @@ public class Endpoints {
     };
 
     public static final String[] PUBLIC_POST = {
+            "/discount/**",
+            "feedbacks/**",
+            "/discounts/**",
+            "/payments/**",
             "/art/add-art",
             "/art/add-art/**",
             "/user/register",
@@ -45,6 +54,10 @@ public class Endpoints {
     };
 
     public static final String[] PUBLIC_PUT = {
+            "feedbacks/**",
+            "/art/**",
+            "/discounts/**",
+            "/discount/**",
             "/cart-item/**",
             "/cart-items/**",
             "/users/**",
@@ -58,16 +71,20 @@ public class Endpoints {
     };
 
     public static final String[] PUBLIC_DELETE = {
+            "feedbacks/**",
+            "/discounts/**",
+            "/discount/**",
             "/cart-items/**",
             "/favorite-art/delete-art",
     };
 
     public static final String[] ADMIN_ENDPOINT = {
+            "/arts/**",
+            "/art/browse-art",
+            "/art/**",
             "/users",
             "/users/**",
             "/cart-items/**",
-//            "/arts",
-//            "/arts/**",
             "/user/add-user/**",
             "/feedbacks/**",
             "/cart-items/**",
@@ -81,7 +98,33 @@ public class Endpoints {
             "/review/**",
             "/art/get-total/**",
             "/feedbacks/search/countBy/**",
-            "/**",
+            "feedbacks/**",
+            "/**"
 
+    };
+    public static final String[] ARTIST_ENDPOINT = {
+            "/discounts/**",
+            "/discount/**",
+            "/art/**",
+            "/users",
+            "/users/**",
+            "/cart-items/**",
+            "/payments/**",
+            "/arts/**",
+            "/user/add-user/**",
+            "/feedbacks/**",
+            "/cart-items/**",
+            "/cart-item/**",
+            "/orders/**",
+            "/order/**",
+            "/order-detail/**",
+            "/roles/**",
+            "/favorite-art/**",
+            "/favorite-arts/**",
+            "/review/**",
+            "/art/get-total/**",
+            "feedbacks/**",
+            "/feedbacks/search/countBy/**",
+            "/**"
     };
 }

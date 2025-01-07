@@ -8,4 +8,5 @@ import vn.ptit.webTranh_backend.entity.User;
 @RepositoryRestResource(path = "orders")
 public interface OrderRepository extends JpaRepository<Order, Integer> {
     public Order findFirstByUserOrderByIdOrderDesc(User user);
+
 }

@@ -22,7 +22,7 @@ public class OrderController {
         }
     }
 
-    @PutMapping("/update-order") // update các trạng thái
+    @PutMapping("/update-order")
     public ResponseEntity<?> update (@RequestBody JsonNode jsonData) {
         try{
             return orderService.update(jsonData);
@@ -32,7 +32,7 @@ public class OrderController {
         }
     }
 
-    @PutMapping("/cancel-order") // khi thanh toán mà huỷ thanh toán
+    @PutMapping("/cancel-order")
     public ResponseEntity<?> cancle (@RequestBody JsonNode jsonNode) {
         try{
             return orderService.cancel(jsonNode);

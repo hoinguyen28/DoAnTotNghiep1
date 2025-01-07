@@ -26,6 +26,7 @@ public class UserSecurityServiceImpl implements UserSecurityService{
         return userRepository.findByUsername(username);
     }
 
+
     // Khi "dap" ở Security Configuration được gọi thì nó sẽ chay hàm này để lấy ra user trong csdl
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
